@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="html-root">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="INDUSTRA — Industrial Growth Partner. Marketing built exclusively for manufacturers and B2B industrial companies across Egypt and the Middle East.">
+  <title>INDUSTRA — Industrial Growth Partner</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,700;0,900;1,300;1,700;1,900&family=Barlow:ital,wght@0,300;0,400;1,300&family=Noto+Kufi+Arabic:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ─── NAV ─────────────────────────────────────────────────── -->
+<nav id="main-nav">
+  <a href="#hero" class="nav-logo">
+    <img src="assets/images/logo-white.png" class="nav-wordmark-img" alt="INDUSTRA">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services" data-en="Services" data-ar="خدماتنا" data-fr="Services">Services</a></li>
+    <li><a href="#packages" data-en="Packages" data-ar="الباقات" data-fr="Forfaits">Packages</a></li>
+    <li><a href="#why" data-en="Why Us" data-ar="لماذا نحن" data-fr="Pourquoi Nous">Why Us</a></li>
+    <li><a href="#proposal" data-en="Proposal" data-ar="عرضنا" data-fr="Proposition">Proposal</a></li>
+      <li class="lang-dropdown" id="lang-dropdown">
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language" aria-expanded="false">
+          <span id="lang-flag">🌐</span>
+          <span id="lang-label">EN</span>
+          <svg class="lang-chevron" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="2,4 6,8 10,4"/></svg>
+        </button>
+        <ul class="lang-menu" id="lang-menu" role="listbox">
+          <li class="lang-option active" data-lang="en" role="option">
+            <span class="lang-opt-flag">🇬🇧</span>
+            <span class="lang-opt-name">English</span>
+            <span class="lang-opt-check">✓</span>
+          </li>
+          <li class="lang-option" data-lang="ar" role="option">
+            <span class="lang-opt-flag">🇪🇬</span>
+            <span class="lang-opt-name">العربية</span>
+            <span class="lang-opt-check">✓</span>
+          </li>
+          <li class="lang-option" data-lang="fr" role="option">
+            <span class="lang-opt-flag">🇫🇷</span>
+            <span class="lang-opt-name">Français</span>
+            <span class="lang-opt-check">✓</span>
+          </li>
+        </ul>
+      </li>
+    <li><a href="#packages" class="nav-cta" data-en="Get Started" data-ar="ابدأ الآن" data-fr="Commencer">Get Started</a></li>
+  </ul>
+</nav>
+
+<!-- ─── HERO ─────────────────────────────────────────────────── -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="hero-line"></div>
+  <div class="hero-line-accent"></div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow" data-en="Egypt &amp; Middle East · Industrial Growth Partner" data-ar="مصر والشرق الأوسط · شريك النمو الصناعي" data-fr="Égypte &amp; Moyen-Orient · Partenaire de Croissance Industrielle">Egypt &amp; Middle East · Industrial Growth Partner</p>
+    <h1 class="hero-headline">
+      <span class="hero-line-1" data-en="Industrial" data-ar="تسويق" data-fr="Marketing">Industrial</span>
+      <span class="hero-line-2" data-en="Marketing" data-ar="صناعي" data-fr="Industriel">Marketing</span>
+      <span class="hero-line-3" data-en="Specialized." data-ar="متخصص." data-fr="Spécialisé.">Specialized.</span>
+    </h1>
+    <p class="hero-sub" data-en="Marketing built exclusively for manufacturers and B2B industrial companies. Not a generic agency. A dedicated growth partner." data-ar="تسويق مصمم حصراً للمصنّعين وشركات B2B الصناعية. لسنا وكالة عادية. نحن شريكك المتخصص في النمو." data-fr="Marketing conçu exclusivement pour les fabricants et les entreprises industrielles B2B. Pas une agence généraliste. Un partenaire de croissance dédié.">Marketing built exclusively for manufacturers and B2B industrial companies. Not a generic agency. A dedicated growth partner.</p>
+  </div>
+
+  <div class="hero-ctas">
+    <a href="#packages" class="btn-gold" data-en="View Packages" data-ar="عرض الباقات" data-fr="Voir les Forfaits">View Packages</a>
+    <a href="#packages" class="btn-outline" data-en="Invest With Us" data-ar="استثمر معنا" data-fr="Investissez Avec Nous">Invest With Us</a>
+  </div>
+</section>
+
+<!-- ─── MARQUEE ────────────────────────────────────────────────── -->
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="marquee-inner" id="marquee-row-1">
+      <span class="marquee-text" data-en="Brand Development" data-ar="بناء الهوية" data-fr="Développement de Marque">Brand Development</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="B2B Lead Generation" data-ar="توليد العملاء B2B" data-fr="Génération de Leads B2B">B2B Lead Generation</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="Industrial SEO" data-ar="تحسين محركات البحث" data-fr="SEO Industriel">Industrial SEO</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="LinkedIn Outreach" data-ar="حملات لينكدإن" data-fr="Prospection LinkedIn">LinkedIn Outreach</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="Corporate Video" data-ar="فيديو مؤسسي" data-fr="Vidéo Corporate">Corporate Video</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="Market Expansion" data-ar="التوسع في الأسواق" data-fr="Expansion de Marché">Market Expansion</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="Sales Funnel" data-ar="قمع المبيعات" data-fr="Entonnoir de Vente">Sales Funnel</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="AI Marketing" data-ar="تسويق بالذكاء الاصطناعي" data-fr="Marketing IA">AI Marketing</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="Brand Development" data-ar="بناء الهوية" data-fr="Développement de Marque">Brand Development</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="B2B Lead Generation" data-ar="توليد العملاء B2B" data-fr="Génération de Leads B2B">B2B Lead Generation</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="Industrial SEO" data-ar="تحسين محركات البحث" data-fr="SEO Industriel">Industrial SEO</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="LinkedIn Outreach" data-ar="حملات لينكدإن" data-fr="Prospection LinkedIn">LinkedIn Outreach</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="Corporate Video" data-ar="فيديو مؤسسي" data-fr="Vidéo Corporate">Corporate Video</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="Market Expansion" data-ar="التوسع في الأسواق" data-fr="Expansion de Marché">Market Expansion</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="Sales Funnel" data-ar="قمع المبيعات" data-fr="Entonnoir de Vente">Sales Funnel</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="AI Marketing" data-ar="تسويق بالذكاء الاصطناعي" data-fr="Marketing IA">AI Marketing</span><span class="marquee-dot"></span>
+    </div>
+  </div>
+  <div class="marquee-track">
+    <div class="marquee-inner reverse" id="marquee-row-2">
+      <span class="marquee-text" data-en="Egypt · Middle East · MENA" data-ar="مصر · الشرق الأوسط · منطقة الشرق الأوسط وشمال أفريقيا" data-fr="Égypte · Moyen-Orient · MENA">Egypt · Middle East · MENA</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="40,000+ Manufacturers" data-ar="أكثر من 40,000 مصنّع" data-fr="40 000+ Fabricants">40,000+ Manufacturers</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="B2B Industrial Growth" data-ar="نمو صناعي B2B" data-fr="Croissance Industrielle B2B">B2B Industrial Growth</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="Procurement Marketing" data-ar="تسويق المشتريات" data-fr="Marketing Achats">Procurement Marketing</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="Industrial Branding" data-ar="الهوية الصناعية" data-fr="Image de Marque Industrielle">Industrial Branding</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="Manufacturing Sector" data-ar="قطاع التصنيع" data-fr="Secteur Manufacturier">Manufacturing Sector</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="Egypt · Middle East · MENA" data-ar="مصر · الشرق الأوسط · منطقة الشرق الأوسط وشمال أفريقيا" data-fr="Égypte · Moyen-Orient · MENA">Egypt · Middle East · MENA</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="40,000+ Manufacturers" data-ar="أكثر من 40,000 مصنّع" data-fr="40 000+ Fabricants">40,000+ Manufacturers</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="B2B Industrial Growth" data-ar="نمو صناعي B2B" data-fr="Croissance Industrielle B2B">B2B Industrial Growth</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="Procurement Marketing" data-ar="تسويق المشتريات" data-fr="Marketing Achats">Procurement Marketing</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="Industrial Branding" data-ar="الهوية الصناعية" data-fr="Image de Marque Industrielle">Industrial Branding</span><span class="marquee-dot"></span>
+      <span class="marquee-text" data-en="Manufacturing Sector" data-ar="قطاع التصنيع" data-fr="Secteur Manufacturier">Manufacturing Sector</span><span class="marquee-dot"></span>
+    </div>
+  </div>
+</div>
+
+<!-- ─── PROBLEM ────────────────────────────────────────────────── -->
+<section id="problem">
+  <div class="two-col">
+    <div>
+      <span class="section-label reveal" data-en="The Problem" data-ar="المشكلة" data-fr="Le Problème">The Problem</span>
+      <h2 class="section-headline reveal reveal-d1">
+        <span data-en="Industrial Companies<br>Are" data-ar="الشركات الصناعية<br>غير" data-fr="Les Entreprises Industrielles<br>Sont">Industrial Companies<br>Are</span> <em class="italic-gold" data-en="Invisible." data-ar="مرئية." data-fr="Invisibles.">Invisible.</em>
+      </h2>
+      <p class="body-text reveal reveal-d2" data-en="Egypt's manufacturing sector generates billions in output — yet most of its companies are absent from the digital channels where procurement managers and B2B buyers make decisions. The problem isn't the product. It's the presentation." data-ar="يولّد قطاع التصنيع في مصر مليارات الجنيهات — غير أن معظم شركاته غائبة عن القنوات الرقمية التي يتخذ فيها مديرو المشتريات ومشتري B2B قراراتهم. المشكلة ليست في المنتج، بل في طريقة التقديم." data-fr="Le secteur manufacturier égyptien génère des milliards de production — pourtant la plupart de ses entreprises sont absentes des canaux numériques où les responsables achats et acheteurs B2B prennent leurs décisions. Le problème n'est pas le produit. C'est la présentation.">
+        Egypt's manufacturing sector generates billions in output — yet most of its companies are absent from the digital channels where procurement managers and B2B buyers make decisions. The problem isn't the product. It's the presentation.
+      </p>
+
+      <div class="challenge-list">
+        <div class="challenge-row reveal reveal-d2">
+          <div class="challenge-label" data-en="Challenge A" data-ar="التحدي أ" data-fr="Défi A">Challenge A</div>
+          <div class="challenge-text" data-en="No Digital Presence" data-ar="غياب الحضور الرقمي" data-fr="Absence de Présence Numérique">No Digital Presence</div>
+          <div class="challenge-sub" data-en="Most industrial companies rely entirely on referrals and trade fairs — invisible to the growing pool of online buyers." data-ar="تعتمد معظم الشركات الصناعية كلياً على التوصيات والمعارض التجارية — غير مرئية للمشترين الرقميين المتزايدين." data-fr="La plupart des entreprises industrielles s'appuient entièrement sur les recommandations et les salons professionnels — invisibles pour le nombre croissant d'acheteurs en ligne.">Most industrial companies rely entirely on referrals and trade fairs — invisible to the growing pool of online buyers.</div>
+        </div>
+        <div class="challenge-row reveal reveal-d3">
+          <div class="challenge-label" data-en="Challenge B" data-ar="التحدي ب" data-fr="Défi B">Challenge B</div>
+          <div class="challenge-text" data-en="Generic Agencies Don't Understand Manufacturing" data-ar="الوكالات العامة لا تفهم التصنيع" data-fr="Les Agences Généralistes ne Comprennent pas la Fabrication">Generic Agencies Don't Understand Manufacturing</div>
+          <div class="challenge-sub" data-en="Standard marketing firms optimize for likes and reach — not for long procurement cycles and technical B2B decision-makers." data-ar="تُحسّن شركات التسويق العادية الوصول والإعجابات — لا دورات الشراء الطويلة وصانعي القرار التقنيين في B2B." data-fr="Les agences marketing classiques optimisent pour les likes et la portée — pas pour les longs cycles d'achat et les décideurs B2B techniques.">Standard marketing firms optimize for likes and reach — not for long procurement cycles and technical B2B decision-makers.</div>
+        </div>
+        <div class="challenge-row reveal reveal-d4">
+          <div class="challenge-label" data-en="Challenge C" data-ar="التحدي ج" data-fr="Défi C">Challenge C</div>
+          <div class="challenge-text" data-en="Competitors Are Moving First" data-ar="المنافسون يتحركون أولاً" data-fr="Les Concurrents Agissent en Premier">Competitors Are Moving First</div>
+          <div class="challenge-sub" data-en="Regional manufacturers are investing in digital. The companies that act now capture territory that becomes increasingly expensive later." data-ar="المصنّعون الإقليميون يستثمرون في الرقمنة. الشركات التي تتحرك الآن تستحوذ على مكانة يصعب منافستها لاحقاً." data-fr="Les fabricants régionaux investissent dans le numérique. Les entreprises qui agissent maintenant s'approprient un terrain qui deviendra de plus en plus coûteux.">Regional manufacturers are investing in digital. The companies that act now capture territory that becomes increasingly expensive later.</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="gap-blocks" style="margin-top: 80px;">
+        <div class="gap-block reveal reveal-d1">
+          <div class="gap-block-label" data-en="The Gap" data-ar="الفجوة" data-fr="L'Écart">The Gap</div>
+          <div class="gap-block-text" data-en='Fewer than <em class="italic-gold">5%</em> of agencies specialize in industrial sectors' data-ar='أقل من <em class="italic-gold">5%</em> من الوكالات متخصصة في القطاع الصناعي'>Fewer than <em class="italic-gold">5%</em> of agencies specialize in industrial sectors</div>
+        </div>
+        <div class="gap-block reveal reveal-d2">
+          <div class="gap-block-label" data-en="The Result" data-ar="النتيجة" data-fr="Le Résultat">The Result</div>
+          <div class="gap-block-text" data-en='40,000+ manufacturers in Egypt without a <em class="italic-gold">digital strategy</em>' data-ar='أكثر من 40,000 مصنّع في مصر بدون <em class="italic-gold">استراتيجية رقمية</em>'>40,000+ manufacturers in Egypt without a <em class="italic-gold">digital strategy</em></div>
+        </div>
+        <div class="gap-block reveal reveal-d3">
+          <div class="gap-block-label" data-en="The Opportunity" data-ar="الفرصة" data-fr="L'Opportunité">The Opportunity</div>
+          <div class="gap-block-text" data-en='First-mover advantage across <em class="italic-gold">MENA</em> is still available' data-ar='ميزة الريادة عبر منطقة <em class="italic-gold">الشرق الأوسط وشمال أفريقيا</em> لا تزال متاحة'>First-mover advantage across <em class="italic-gold">MENA</em> is still available</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SERVICES ──────────────────────────────────────────────── -->
+<section id="services">
+  <span class="section-label reveal" data-en="What We Do" data-ar="ما نقدمه" data-fr="Ce Que Nous Faisons">What We Do</span>
+  <div class="services-layout">
+    <div>
+      <h2 class="section-headline reveal reveal-d1">
+        <span data-en="Five Pillars<br>of" data-ar="خمسة محاور<br>لل" data-fr="Cinq Piliers<br>de" data-fr="Cinq Piliers<br>de">Five Pillars<br>of</span> <em class="italic-gold" data-en="Growth." data-ar="نمو." data-fr="Croissance.">Growth.</em>
+      </h2>
+      <p class="body-text reveal reveal-d2" style="max-width: 360px;" data-en="Five focused pillars that cover every dimension of industrial growth — from brand and digital to events, media, and exclusive B2B platform access." data-ar="كل ما تقدمه INDUSTRA يندرج ضمن خمسة محاور منضبطة — كل واحد مبني حول كيفية فوز الشركات الصناعية بالأعمال فعلياً." data-fr="Tout ce que INDUSTRA délivre s'inscrit dans cinq domaines disciplinés — chacun construit autour de la façon dont les entreprises industrielles gagnent réellement des affaires.">Five focused pillars that cover every dimension of industrial growth — from brand and digital to events, media, and exclusive B2B platform access.</p>
+
+      <div class="service-list" style="margin-top: 48px;">
+        <div class="service-row reveal reveal-d2" data-service="marketing">
+          <span class="service-num">01</span>
+          <div class="service-info">
+            <div class="service-title" data-en="Digital Marketing &amp; Brand Development" data-ar="التسويق الرقمي وبناء العلامة التجارية" data-fr="Marketing Digital &amp; Développement de Marque">Digital Marketing &amp; Brand Development</div>
+            <div class="service-tags">
+              <span class="tag" data-en="Brand Identity" data-ar="الهوية التجارية" data-fr="Identité de Marque">Brand Identity</span>
+              <span class="tag" data-en="Lead Generation" data-ar="توليد العملاء" data-fr="Génération de Leads">Lead Generation</span>
+              <span class="tag" data-en="AI Marketing" data-ar="تسويق ذكي" data-fr="Marketing IA">AI Marketing</span>
+            </div>
+          </div>
+          <span class="service-arrow">→</span>
+        </div>
+
+        <div class="service-row reveal reveal-d3" data-service="digital">
+          <span class="service-num">02</span>
+          <div class="service-info">
+            <div class="service-title" data-en="Digital Marketing &amp; Lead Gen" data-ar="التسويق الرقمي وتوليد العملاء" data-fr="Marketing Digital &amp; Génération de Leads">Digital Marketing &amp; Lead Gen</div>
+            <div class="service-tags">
+              <span class="tag" data-en="LinkedIn Outreach" data-ar="حملات لينكدإن" data-fr="Prospection LinkedIn">LinkedIn Outreach</span>
+              <span class="tag" data-en="Google Ads" data-ar="إعلانات جوجل" data-fr="Google Ads">Google Ads</span>
+              <span class="tag" data-en="AI Optimization" data-ar="تحسين بالذكاء الاصطناعي" data-fr="Optimisation IA">AI Optimization</span>
+            </div>
+          </div>
+          <span class="service-arrow">→</span>
+        </div>
+
+        <div class="service-row reveal reveal-d4" data-service="events-contrib">
+          <span class="service-num">03</span>
+          <div class="service-info">
+            <div class="service-title" data-en="Websites, SEO &amp; Media" data-ar="المواقع وتحسين البحث والإعلام" data-fr="Sites Web, SEO &amp; Médias">Websites, SEO &amp; Media</div>
+            <div class="service-tags">
+              <span class="tag" data-en="Web Development" data-ar="تطوير المواقع" data-fr="Développement Web">Web Development</span>
+              <span class="tag" data-en="Industrial SEO" data-ar="تحسين البحث الصناعي" data-fr="SEO Industriel">Industrial SEO</span>
+              <span class="tag" data-en="Corporate Video" data-ar="فيديو مؤسسي" data-fr="Vidéo Corporate">Corporate Video</span>
+            </div>
+          </div>
+          <span class="service-arrow">→</span>
+        </div>
+
+        <div class="service-row reveal reveal-d4" data-service="platforms">
+          <span class="service-num">04</span>
+          <div class="service-info">
+            <div class="service-title" data-en="Contribution in Events &amp; Conferences" data-ar="المشاركة في الفعاليات والمؤتمرات الصناعية" data-fr="Contribution aux Événements &amp; Conférences">Contribution in Events &amp; Conferences</div>
+            <div class="service-tags">
+              <span class="tag" data-en="Industrial Expos" data-ar="معارض صناعية" data-fr="Salons Industriels">Industrial Expos</span>
+              <span class="tag" data-en="Speaking Slots" data-ar="فرص التحدث" data-fr="Prises de Parole">Speaking Slots</span>
+              <span class="tag" data-en="Delegate Access" data-ar="تصاريح المندوبين" data-fr="Accréditations">Delegate Access</span>
+            </div>
+          </div>
+          <span class="service-arrow">→</span>
+        </div>
+
+        <div class="service-row reveal reveal-d5" data-service="b2b">
+          <span class="service-num">05</span>
+          <div class="service-info">
+            <div class="service-title" data-en="Connect You to Our Digital &amp; B2B Platforms" data-ar="نربطك بمنصاتنا الرقمية وB2B" data-fr="Connectez-Vous à Nos Plateformes Digitales &amp; B2B">Connect You to Our Digital &amp; B2B Platforms</div>
+            <div class="service-tags">
+              <span class="tag" data-en="B2B Network" data-ar="شبكة B2B" data-fr="Réseau B2B">B2B Network</span>
+              <span class="tag" data-en="Digital Platforms" data-ar="منصات رقمية" data-fr="Plateformes Digitales">Digital Platforms</span>
+              <span class="tag" data-en="Reputation Growth" data-ar="نمو السمعة" data-fr="Croissance de Réputation">Reputation Growth</span>
+            </div>
+          </div>
+          <span class="service-arrow">→</span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="service-panel" id="service-panel">
+        <div class="panel-default" id="panel-default">
+          <img src="assets/images/logo-gold.png" class="panel-diamond" alt="" width="48" height="58">
+          <p class="panel-hint" data-en="Hover a service to explore" data-ar="مرّر على خدمة لاستكشافها" data-fr="Survolez un service pour explorer">Hover a service to explore</p>
+        </div>
+
+        <div class="panel-content" id="panel-marketing">
+          <p class="panel-label" data-en="01 · Digital Marketing &amp; Brand Development" data-ar="01 · التسويق الرقمي وبناء العلامة التجارية" data-fr="01 · Marketing Digital &amp; Développement de Marque">01 · Digital Marketing &amp; Brand Development</p>
+          <h3 class="panel-title" data-en="Your Brand. Your Market. Your Growth." data-ar="علامتك. سوقك. نموك." data-fr="Votre Marque. Votre Marché. Votre Croissance.">Your Brand. Your Market. Your Growth.</h3>
+          <p class="panel-desc" data-en="We combine industrial brand building with performance digital marketing into one unified strategy. From visual identity and company profiles to LinkedIn campaigns, Google Ads, and AI-powered lead generation — we build your brand and fill your pipeline simultaneously." data-ar="ندمج بناء العلامة التجارية الصناعية مع التسويق الرقمي الأداتي في استراتيجية موحّدة. من الهوية البصرية وملفات الشركة إلى حملات لينكدإن وإعلانات جوجل وتوليد العملاء بالذكاء الاصطناعي — نبني علامتك ونملأ خط أعمالك في آنٍ واحد." data-fr="Nous combinons la construction de marque industrielle avec le marketing digital de performance en une stratégie unifiée. De l'identité visuelle aux profils d'entreprise, en passant par les campagnes LinkedIn, Google Ads et la génération de leads par IA — nous construisons votre marque et alimentons votre pipeline simultanément.">We combine industrial brand building with performance digital marketing into one unified strategy. From visual identity and company profiles to LinkedIn campaigns, Google Ads, and AI-powered lead generation — we build your brand and fill your pipeline simultaneously.</p>
+        </div>
+
+        <div class="panel-content" id="panel-digital">
+          <p class="panel-label" data-en="02 · Websites, SEO &amp; Media" data-ar="02 · المواقع وتحسين البحث والإعلام" data-fr="02 · Sites Web, SEO &amp; Médias">02 · Websites, SEO &amp; Media</p>
+          <h3 class="panel-title" data-en="Found, Trusted, Chosen" data-ar="موجودون، موثوقون، مختارون" data-fr="Trouvé, Approuvé, Choisi">Found, Trusted, Chosen</h3>
+          <p class="panel-desc" data-en="Custom industrial websites built to convert B2B visitors into inquiries. Industrial SEO targets the exact search terms procurement teams use when sourcing suppliers. Corporate video and product photography showcase your manufacturing capabilities with the credibility that technical buyers demand before making contact." data-ar="مواقع صناعية مخصصة مبنية لتحويل زوار B2B إلى استفسارات. يستهدف تحسين البحث الصناعي المصطلحات الدقيقة التي تستخدمها فرق المشتريات عند البحث عن الموردين. الفيديو المؤسسي والتصوير يُبرز قدراتك التصنيعية بالمصداقية التي يطلبها المشترون التقنيون قبل التواصل." data-fr="Sites web industriels sur mesure conçus pour convertir les visiteurs B2B en demandes. Le SEO industriel cible les termes de recherche exacts que les équipes achats utilisent pour sourcer des fournisseurs. La vidéo corporate et la photographie produit mettent en valeur vos capacités de fabrication avec la crédibilité exigée par les acheteurs techniques avant de prendre contact.">Custom industrial websites built to convert B2B visitors into inquiries. Industrial SEO targets the exact search terms procurement teams use when sourcing suppliers. Corporate video and product photography showcase your manufacturing capabilities with the credibility that technical buyers demand before making contact.</p>
+        </div>
+
+        <div class="panel-content" id="panel-events-contrib">
+          <p class="panel-label" data-en="03 · Contribution in Events &amp; Conferences" data-ar="03 · المشاركة في الفعاليات والمؤتمرات" data-fr="03 · Contribution aux Événements &amp; Conférences">03 · Contribution in Events &amp; Conferences</p>
+          <h3 class="panel-title" data-en="Be Present Where Industry Moves" data-ar="كن حاضراً حيث تتحرك الصناعة" data-fr="Soyez Présent Là Où Bouge l'Industrie">Be Present Where Industry Moves</h3>
+          <p class="panel-desc" data-en="INDUSTRA secures your company's presence and active contribution at Egypt's and the region's most strategic industrial expos, trade fairs, and B2B conferences. From delegate passes and booth representation to speaking slots and panel contributions — we put you at the table where procurement decisions are made and industry partnerships are formed." data-ar="تضمن INDUSTRA حضور شركتك ومشاركتها الفاعلة في أبرز المعارض الصناعية والتجارية ومؤتمرات B2B في مصر والمنطقة. من تصاريح المندوبين وتمثيل الجناح إلى فرص التحدث والمشاركة في الجلسات — نضعك على الطاولة التي تُصنع فيها قرارات المشتريات وتُبنى فيها شراكات الصناعة." data-fr="INDUSTRA assure la présence et la contribution active de votre entreprise dans les salons industriels, foires commerciales et conférences B2B les plus stratégiques d'Égypte et de la région. Des accréditations à la représentation sur stand, en passant par les prises de parole et contributions aux panels — nous vous plaçons là où se prennent les décisions d'achat et se nouent les partenariats industriels.">INDUSTRA secures your company's presence and active contribution at Egypt's and the region's most strategic industrial expos, trade fairs, and B2B conferences. From delegate passes and booth representation to speaking slots and panel contributions — we put you at the table where procurement decisions are made and industry partnerships are formed.</p>
+        </div>
+
+        <div class="panel-content" id="panel-platforms">
+          <p class="panel-label" data-en="04 · Connect You to Our Digital &amp; B2B Platforms" data-ar="04 · نربطك بمنصاتنا الرقمية وB2B" data-fr="04 · Connectez-Vous à Nos Plateformes Digitales &amp; B2B">04 · Connect You to Our Digital &amp; B2B Platforms</p>
+          <h3 class="panel-title" data-en="Your Gateway to Industry Connections" data-ar="بوابتك إلى اتصالات الصناعة" data-fr="Votre Passerelle vers les Connexions Industrielles">Your Gateway to Industry Connections</h3>
+          <p class="panel-desc" data-en="INDUSTRA connects your company to our exclusive network of digital and B2B industrial platforms across Egypt and MENA. Access verified supplier directories, procurement networks, and industry marketplaces — building your presence, expanding your connections, and elevating your reputation with every verified interaction." data-ar="تربط INDUSTRA شركتك بشبكتنا الحصرية من المنصات الرقمية والصناعية B2B في مصر ومنطقة الشرق الأوسط وشمال أفريقيا. الوصول إلى أدلة الموردين الموثّقة وشبكات المشتريات والأسواق الصناعية — بناء حضورك وتوسيع اتصالاتك ورفع سمعتك مع كل تفاعل موثّق." data-fr="INDUSTRA connecte votre entreprise à notre réseau exclusif de plateformes digitales et industrielles B2B en Égypte et dans la région MENA. Accédez aux annuaires fournisseurs vérifiés, aux réseaux d'achats et aux marchés industriels — en construisant votre présence, en élargissant vos connexions et en élevant votre réputation à chaque interaction vérifiée.">INDUSTRA connects your company to our exclusive network of digital and B2B industrial platforms across Egypt and MENA. Access verified supplier directories, procurement networks, and industry marketplaces — building your presence, expanding your connections, and elevating your reputation with every verified interaction.</p>
+        </div>
+
+        <div class="panel-content" id="panel-b2b">
+          <p class="panel-label" data-en="05 · Digital &amp; B2B Platforms" data-ar="05 · المنصات الرقمية وB2B" data-fr="05 · Plateformes Digitales &amp; B2B">05 · Digital &amp; B2B Platforms</p>
+          <h3 class="panel-title" data-en="Connect. Verify. Grow." data-ar="تواصل. تحقّق. انمُ." data-fr="Connectez. Vérifiez. Grandissez.">Connect. Verify. Grow.</h3>
+          <p class="panel-desc" data-en="INDUSTRA clients gain exclusive access to our curated B2B industrial platform — a verified network of manufacturers, suppliers, and buyers across Egypt and MENA. Build your company profile, accumulate verified transactions, earn trust badges, and rise in reputation rankings that procurement managers actively consult when sourcing partners." data-ar="يحصل عملاء INDUSTRA على وصول حصري إلى منصتنا الصناعية B2B المنتقاة — شبكة موثّقة من المصنّعين والموردين والمشترين عبر مصر ومنطقة الشرق الأوسط وشمال أفريقيا. ابنِ ملف شركتك، واجمع المعاملات الموثّقة، واكسب شارات الثقة، وارتقِ في تصنيفات السمعة التي يرجع إليها مديرو المشتريات عند البحث عن شركاء." data-fr="Les clients INDUSTRA bénéficient d'un accès exclusif à notre plateforme industrielle B2B sélectionnée — un réseau vérifié de fabricants, fournisseurs et acheteurs à travers l'Égypte et la région MENA. Construisez votre profil d'entreprise, accumulez des transactions vérifiées, obtenez des badges de confiance et montez dans les classements de réputation que les responsables achats consultent activement pour trouver des partenaires.">INDUSTRA clients gain exclusive access to our curated B2B industrial platform — a verified network of manufacturers, suppliers, and buyers across Egypt and MENA. Build your company profile, accumulate verified transactions, earn trust badges, and rise in reputation rankings that procurement managers actively consult when sourcing partners.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PACKAGES ──────────────────────────────────────────────── -->
+<section id="packages">
+  <div class="packages-header">
+    <div>
+      <span class="section-label reveal" data-en="Investment" data-ar="الاستثمار" data-fr="Investissement">Investment</span>
+      <h2 class="section-headline reveal reveal-d1">
+        <span data-en="Built for Every<br>" data-ar="مصمم لكل<br>" data-fr="Conçu Pour Chaque<br>">Built for Every<br></span><em class="italic-gold" data-en="Stage of Growth." data-ar="مرحلة نمو." data-fr="Étape de Croissance.">Stage of Growth.</em>
+      </h2>
+    </div>
+    <p class="body-text reveal reveal-d2" style="padding-top: 60px;" data-en="Three packages designed to guide industrial businesses from digital presence to regional market leadership. Annual retainers that compound over time — not one-off projects." data-ar="ثلاث باقات مصممة لتوجيه الشركات الصناعية من الحضور الرقمي إلى الريادة الإقليمية. اشتراكات سنوية تتراكم قيمتها بمرور الوقت — وليست مشاريع منفردة." data-fr="Trois forfaits conçus pour guider les entreprises industrielles de la présence numérique au leadership régional. Des abonnements annuels qui s'accumulent dans le temps — pas des projets ponctuels.">Three packages designed to guide industrial businesses from digital presence to regional market leadership. Annual retainers that compound over time — not one-off projects.</p>
+  </div>
+
+  <!-- Billing Toggle -->
+  <div class="billing-toggle-wrap reveal">
+    <button class="billing-btn active" data-period="yearly" data-en="Yearly" data-ar="سنوي" data-fr="Annuel">Yearly <span class="billing-badge" style="background:#1a7a3a;" data-en="Best Value" data-ar="الأفضل" data-fr="Meilleur Rapport">Best Value</span></button>
+    <button class="billing-btn" data-period="quarterly" data-en="Quarterly" data-ar="ربع سنوي" data-fr="Trimestriel">Quarterly <span class="billing-badge">+30%</span></button>
+    <button class="billing-btn" data-period="monthly" data-en="Monthly" data-ar="شهري" data-fr="Mensuel">Monthly <span class="billing-badge">+25%</span></button>
+  </div>
+  <p class="billing-note reveal" id="billing-note" data-en="Billed annually — lowest total cost." data-ar="يُدفع سنوياً — أقل تكلفة إجمالية." data-fr="Facturé annuellement — coût total le plus bas.">Billed annually — lowest total cost.</p>
+
+  <div class="packages-grid reveal-scale reveal">
+    <!-- Starter -->
+    <div class="pkg">
+      <div class="pkg-name" data-en="Starter" data-ar="البداية" data-fr="Démarrage">Starter</div>
+      <div class="pkg-price-wrap">
+        <div class="pkg-price" id="price-starter">15,000 EGP</div>
+        <div class="pkg-price-sub" id="price-starter-sub"></div>
+      </div>
+      <div class="pkg-period" id="period-starter" data-en="Per Year" data-ar="في السنة" data-fr="Par An">Per Year</div>
+      <p class="pkg-target" data-en="For small and medium industrial companies needing digital presence and brand positioning." data-ar="للشركات الصناعية الصغيرة والمتوسطة التي تحتاج إلى حضور رقمي وتموضع للعلامة التجارية." data-fr="Pour les petites et moyennes entreprises industrielles ayant besoin d'une présence numérique et d'un positionnement de marque.">For small and medium industrial companies needing digital presence and brand positioning.</p>
+      <ul class="pkg-features">
+        <li data-en="Branding Development &amp; Visual Identity" data-ar="تطوير العلامة التجارية والهوية البصرية" data-fr="Développement de Marque &amp; Identité Visuelle">Branding Development &amp; Visual Identity</li>
+        <li data-en="Company Profile Optimization" data-ar="تحسين ملف الشركة" data-fr="Optimisation du Profil d'Entreprise">Company Profile Optimization</li>
+        <li data-en="Social Media Management (2 platforms)" data-ar="إدارة التواصل الاجتماعي (منصتان)" data-fr="Gestion des Réseaux Sociaux (2 plateformes)">Social Media Management (2 platforms)</li>
+        <li data-en="8 Social Posts / Month" data-ar="8 منشورات / الشهر" data-fr="8 Publications / Mois">8 Social Posts / Month</li>
+        <li data-en="Basic SEO &amp; Google Business Profile" data-ar="تحسين محركات البحث الأساسي وملف جوجل" data-fr="SEO de Base &amp; Profil Google Business">Basic SEO &amp; Google Business Profile</li>
+        <li data-en="Monthly Performance Report" data-ar="تقرير الأداء الشهري" data-fr="Rapport de Performance Mensuel">Monthly Performance Report</li>
+        <li data-en="Client Portal &amp; Dashboard" data-ar="بوابة العميل ولوحة التحكم" data-fr="Portail Client &amp; Tableau de Bord">Client Portal &amp; Dashboard</li>
+        <li data-en="1-Hour Onboarding Session" data-ar="جلسة تأهيل لمدة ساعة" data-fr="Session d'Intégration d'1 Heure">1-Hour Onboarding Session</li>
+      </ul>
+      <a href="#" class="btn-border" data-en="Get Started" data-ar="ابدأ الآن" data-fr="Commencer">Get Started</a>
+    </div>
+
+    <!-- Growth (featured) -->
+    <div class="pkg featured">
+      <div class="pkg-popular" data-en="Most Popular" data-ar="الأكثر طلباً" data-fr="Le Plus Populaire">Most Popular</div>
+      <div class="pkg-name" data-en="Growth" data-ar="النمو" data-fr="Croissance">Growth</div>
+      <div class="pkg-price-wrap">
+        <div class="pkg-price" id="price-growth">30,000 EGP</div>
+        <div class="pkg-price-sub" id="price-growth-sub"></div>
+      </div>
+      <div class="pkg-period" id="period-growth" data-en="Per Year" data-ar="في السنة" data-fr="Par An">Per Year</div>
+      <p class="pkg-target" data-en="For growing industrial companies seeking lead generation and market reach." data-ar="للشركات الصناعية النامية التي تسعى إلى توليد العملاء وتوسيع نطاق السوق." data-fr="Pour les entreprises industrielles en croissance cherchant à générer des leads et à élargir leur portée de marché.">For growing industrial companies seeking lead generation and market reach.</p>
+      <ul class="pkg-features">
+        <li data-en="Everything in Starter" data-ar="كل شيء في باقة البداية" data-fr="Tout du Forfait Démarrage">Everything in Starter</li>
+        <li data-en="4 Platforms · 16 Posts / Month" data-ar="4 منصات · 16 منشور / الشهر" data-fr="4 Plateformes · 16 Publications / Mois">4 Platforms · 16 Posts / Month</li>
+        <li data-en="Full SEO Strategy &amp; Execution" data-ar="استراتيجية تحسين محركات البحث الكاملة وتنفيذها" data-fr="Stratégie SEO Complète &amp; Exécution">Full SEO Strategy &amp; Execution</li>
+        <li data-en="Google Ads / PPC Management" data-ar="إدارة إعلانات جوجل / الدفع بالنقرة" data-fr="Gestion Google Ads / PPC">Google Ads / PPC Management</li>
+        <li data-en="4 Blog Articles / Month" data-ar="4 مقالات مدونة / الشهر" data-fr="4 Articles de Blog / Mois">4 Blog Articles / Month</li>
+        <li data-en="LinkedIn Outreach Campaigns" data-ar="حملات التواصل عبر لينكدإن" data-fr="Campagnes de Prospection LinkedIn">LinkedIn Outreach Campaigns</li>
+        <li data-en="AI Marketing Optimization" data-ar="تحسين التسويق بالذكاء الاصطناعي" data-fr="Optimisation Marketing IA">AI Marketing Optimization</li>
+        <li data-en="Dedicated Account Manager (4 hrs/mo)" data-ar="مدير حساب مخصص (4 ساعات/شهر)" data-fr="Chargé de Compte Dédié (4h/mois)">Dedicated Account Manager (4 hrs/mo)</li>
+        <li data-en="Bi-Weekly Reports &amp; Strategy Call" data-ar="تقارير نصف شهرية ومكالمة استراتيجية" data-fr="Rapports Bi-Hebdomadaires &amp; Appel Stratégique">Bi-Weekly Reports &amp; Strategy Call</li>
+      </ul>
+      <a href="#" class="btn-gold-block" data-en="Get Started" data-ar="ابدأ الآن" data-fr="Commencer">Get Started</a>
+    </div>
+
+    <!-- Enterprise -->
+    <div class="pkg">
+      <div class="pkg-name" data-en="Enterprise" data-ar="المؤسسات" data-fr="Entreprise">Enterprise</div>
+      <div class="pkg-price-wrap">
+        <div class="pkg-price" id="price-enterprise">100,000 EGP</div>
+        <div class="pkg-price-sub" id="price-enterprise-sub"></div>
+      </div>
+      <div class="pkg-period" id="period-enterprise" data-en="Per Year" data-ar="في السنة" data-fr="Par An">Per Year</div>
+      <p class="pkg-target" data-en="For large industrial companies targeting regional expansion across MENA." data-ar="للشركات الصناعية الكبيرة التي تستهدف التوسع الإقليمي عبر منطقة الشرق الأوسط وشمال أفريقيا." data-fr="Pour les grandes entreprises industrielles ciblant une expansion régionale à travers la zone MENA.">For large industrial companies targeting regional expansion across MENA.</p>
+      <ul class="pkg-features">
+        <li data-en="Everything in Growth" data-ar="كل شيء في باقة النمو" data-fr="Tout du Forfait Croissance">Everything in Growth</li>
+        <li data-en="Custom Website Development" data-ar="تطوير موقع مخصص" data-fr="Développement de Site Web Personnalisé">Custom Website Development</li>
+        <li data-en="Video Production &amp; Photography" data-ar="إنتاج الفيديو والتصوير" data-fr="Production Vidéo &amp; Photographie">Video Production &amp; Photography</li>
+        <li data-en="International SEO &amp; Multi-Language" data-ar="تحسين محركات البحث الدولي ومتعدد اللغات" data-fr="SEO International &amp; Multi-Langues">International SEO &amp; Multi-Language</li>
+        <li data-en="Full Funnel &amp; Sales Funnel Strategy" data-ar="استراتيجية قمع المبيعات الكاملة" data-fr="Stratégie d'Entonnoir Complet">Full Funnel &amp; Sales Funnel Strategy</li>
+        <li data-en="Regional Market Expansion Support" data-ar="دعم التوسع في السوق الإقليمي" data-fr="Support d'Expansion de Marché Régional">Regional Market Expansion Support</li>
+        <li data-en="Dedicated Manager (16 hrs/mo)" data-ar="مدير مخصص (16 ساعة/شهر)" data-fr="Manager Dédié (16h/mois)">Dedicated Manager (16 hrs/mo)</li>
+        <li data-en="Weekly Calls + BI Dashboard + SLA" data-ar="مكالمات أسبوعية + لوحة BI + اتفاقية مستوى الخدمة" data-fr="Appels Hebdomadaires + Tableau BI + SLA">Weekly Calls + BI Dashboard + SLA</li>
+      </ul>
+      <a href="#" class="btn-border" data-en="Get Started" data-ar="ابدأ الآن" data-fr="Commencer">Get Started</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── WHY INDUSTRA ───────────────────────────────────────────── -->
+<section id="why">
+  <div class="two-col">
+    <div>
+      <span class="section-label reveal" data-en="Why INDUSTRA" data-ar="لماذا INDUSTRA" data-fr="Pourquoi INDUSTRA">Why INDUSTRA</span>
+      <h2 class="section-headline reveal reveal-d1">
+        <span data-en="Not a Generic<br>" data-ar="لسنا وكالة<br>" data-fr="Pas une Agence<br>">Not a Generic<br></span><em class="italic-gold" data-en="Agency." data-ar="عادية." data-fr="Généraliste.">Agency.</em>
+      </h2>
+      <p class="body-text reveal reveal-d2" style="max-width: 380px; margin-top: 8px;" data-en="Industrial marketing is a different discipline. The buying cycles are longer, the decision-makers are technical, and the credibility requirements are higher. A generalist agency does not understand this — and the results show it." data-ar="التسويق الصناعي تخصص مختلف. دورات الشراء أطول، وصانعو القرار تقنيون، ومتطلبات المصداقية أعلى. الوكالات العامة لا تفهم هذا — والنتائج تُثبت ذلك." data-fr="Le marketing industriel est une discipline différente. Les cycles d'achat sont plus longs, les décideurs sont techniques, et les exigences de crédibilité sont plus élevées. Une agence généraliste ne comprend pas cela — et les résultats le montrent.">Industrial marketing is a different discipline. The buying cycles are longer, the decision-makers are technical, and the credibility requirements are higher. A generalist agency does not understand this — and the results show it.</p>
+    </div>
+
+    <div class="reveal reveal-d2">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th data-en="Dimension" data-ar="المحور" data-fr="Dimension">Dimension</th>
+            <th data-en="Traditional Agency" data-ar="الوكالة التقليدية" data-fr="Agence Traditionnelle">Traditional Agency</th>
+            <th>INDUSTRA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-en="Market Focus" data-ar="التركيز السوقي" data-fr="Ciblage Marché">Market Focus</td>
+            <td data-en="All industries" data-ar="جميع القطاعات" data-fr="Tous secteurs">All industries</td>
+            <td data-en="Industrial only" data-ar="صناعي فقط" data-fr="Industriel uniquement">Industrial only</td>
+          </tr>
+          <tr>
+            <td data-en="Primary Goal" data-ar="الهدف الأساسي" data-fr="Objectif Principal">Primary Goal</td>
+            <td data-en="Impressions &amp; reach" data-ar="مشاهدات والوصول" data-fr="Impressions &amp; portée">Impressions &amp; reach</td>
+            <td data-en="Qualified B2B pipeline" data-ar="خط أنابيب B2B مؤهّل" data-fr="Pipeline B2B qualifié">Qualified B2B pipeline</td>
+          </tr>
+          <tr>
+            <td data-en="Content" data-ar="المحتوى" data-fr="Contenu">Content</td>
+            <td data-en="Generic creative" data-ar="إبداع عام" data-fr="Créatif générique">Generic creative</td>
+            <td data-en="Technical credibility" data-ar="مصداقية تقنية" data-fr="Crédibilité technique">Technical credibility</td>
+          </tr>
+          <tr>
+            <td data-en="Model" data-ar="النموذج" data-fr="Modèle">Model</td>
+            <td data-en="Project-based" data-ar="قائم على المشاريع" data-fr="Basé sur projets">Project-based</td>
+            <td data-en="Long-term retainer" data-ar="اشتراك طويل الأمد" data-fr="Abonnement long terme">Long-term retainer</td>
+          </tr>
+          <tr>
+            <td data-en="Expertise" data-ar="الخبرة" data-fr="Expertise">Expertise</td>
+            <td data-en="Consumer-trained" data-ar="موجّهة للمستهلك" data-fr="Formé au consommateur">Consumer-trained</td>
+            <td data-en="Manufacturing-focused" data-ar="متخصصة في التصنيع" data-fr="Axé fabrication">Manufacturing-focused</td>
+          </tr>
+          <tr>
+            <td data-en="Leads" data-ar="العملاء المحتملون" data-fr="Leads">Leads</td>
+            <td data-en="Volume metrics" data-ar="مقاييس الكمية" data-fr="Métriques de volume">Volume metrics</td>
+            <td data-en="Procurement-ready" data-ar="جاهزون للشراء" data-fr="Prêts à l'achat">Procurement-ready</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ─── WHY NOW ────────────────────────────────────────────────── -->
+<section id="now">
+  <div class="two-col">
+    <div>
+      <div class="insight-blocks">
+        <div class="insight-block reveal">
+          <div class="insight-block-title" data-en="Industrial Buyers Are Online — Now" data-ar="المشترون الصناعيون على الإنترنت — الآن" data-fr="Les Acheteurs Industriels Sont en Ligne — Maintenant">Industrial Buyers Are Online — Now</div>
+          <div class="insight-block-sub" data-en="Procurement managers research suppliers digitally before any contact. Companies without a strong digital presence are removed from consideration before the conversation starts." data-ar="مديرو المشتريات يبحثون عن الموردين رقمياً قبل أي تواصل. الشركات بدون حضور رقمي قوي تُستبعد قبل أن تبدأ المحادثة." data-fr="Les responsables achats recherchent les fournisseurs numériquement avant tout contact. Les entreprises sans présence numérique forte sont éliminées avant même que la conversation commence.">Procurement managers research suppliers digitally before any contact. Companies without a strong digital presence are removed from consideration before the conversation starts.</div>
+        </div>
+        <div class="insight-block reveal reveal-d2">
+          <div class="insight-block-title" data-en="Fewer Than 5% of Agencies Specialize in Industrial" data-ar="أقل من 5% من الوكالات متخصصة في الصناعة" data-fr="Moins de 5% des Agences se Spécialisent dans l'Industriel">Fewer Than 5% of Agencies Specialize in Industrial</div>
+          <div class="insight-block-sub" data-en="The market gap is real. Companies that move first establish authority and search presence that becomes exponentially harder to displace over time." data-ar="الفجوة السوقية حقيقية. الشركات التي تتحرك أولاً تُرسّخ سلطتها وحضورها في البحث بطريقة يصعب إزاحتها بمرور الوقت." data-fr="L'écart de marché est réel. Les entreprises qui bougent en premier établissent une autorité et une présence de recherche exponentiellement plus difficiles à déplacer.">The market gap is real. Companies that move first establish authority and search presence that becomes exponentially harder to displace over time.</div>
+        </div>
+        <div class="insight-block reveal reveal-d3">
+          <div class="insight-block-title" data-en="40,000+ Manufacturers in Egypt" data-ar="أكثر من 40,000 مصنّع في مصر" data-fr="40 000+ Fabricants en Égypte">40,000+ Manufacturers in Egypt</div>
+          <div class="insight-block-sub" data-en="The vast majority operate without a digital marketing strategy. This is the addressable market — and it is largely untouched." data-ar="الغالبية العظمى تعمل بدون استراتيجية تسويق رقمي. هذا هو السوق القابل للاستهداف — ولا يزال يكاد يكون بكراً." data-fr="La grande majorité opère sans stratégie de marketing numérique. C'est le marché adressable — et il est largement inexploité.">The vast majority operate without a digital marketing strategy. This is the addressable market — and it is largely untouched.</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <span class="section-label reveal" data-en="Why Now" data-ar="لماذا الآن" data-fr="Pourquoi Maintenant">Why Now</span>
+      <h2 class="section-headline reveal reveal-d1" style="color: var(--navy);">
+        <span data-en="The Window<br>" data-ar="النافذة<br>" data-fr="La Fenêtre<br>">The Window<br></span><em class="italic-gold" data-en="Is Open." data-ar="مفتوحة." data-fr="Est Ouverte.">Is Open.</em>
+      </h2>
+      <p class="body-text reveal reveal-d2" data-en="The digital transformation of Egyptian manufacturing is happening now — not in five years. The companies investing in industrial marketing today will hold the positions that matter when the market matures." data-ar="التحول الرقمي للتصنيع المصري يحدث الآن — لا بعد خمس سنوات. الشركات التي تستثمر في التسويق الصناعي اليوم ستمتلك المواقع الحاسمة عندما ينضج السوق." data-fr="La transformation numérique de la fabrication égyptienne se produit maintenant — pas dans cinq ans. Les entreprises qui investissent dans le marketing industriel aujourd'hui détiendront les positions clés quand le marché arrivera à maturité.">The digital transformation of Egyptian manufacturing is happening now — not in five years. The companies investing in industrial marketing today will hold the positions that matter when the market matures.</p>
+
+      <div class="roadmap-list reveal reveal-d3">
+        <div class="roadmap-row">
+          <div class="roadmap-phase" data-en="Now" data-ar="الآن" data-fr="Maintenant">Now</div>
+          <div class="roadmap-text" data-en="Establish digital presence before competitors do" data-ar="أرسّخ حضورك الرقمي قبل المنافسين" data-fr="Établir une présence numérique avant les concurrents">Establish digital presence before competitors do</div>
+        </div>
+        <div class="roadmap-row">
+          <div class="roadmap-phase" data-en="Next" data-ar="التالي" data-fr="Ensuite">Next</div>
+          <div class="roadmap-text" data-en="Generate qualified leads and build pipeline systematically" data-ar="ولّد عملاء مؤهّلين وابنِ خط أنابيب منهجياً" data-fr="Générer des leads qualifiés et construire un pipeline systématiquement">Generate qualified leads and build pipeline systematically</div>
+        </div>
+        <div class="roadmap-row">
+          <div class="roadmap-phase" data-en="Vision" data-ar="الرؤية" data-fr="Vision">Vision</div>
+          <div class="roadmap-text" data-en="Expand regionally across MENA with authority already built" data-ar="توسّع إقليمياً عبر منطقة الشرق الأوسط وشمال أفريقيا بسلطة راسخة مسبقاً" data-fr="S'étendre régionalement en MENA avec une autorité déjà établie">Expand regionally across MENA with authority already built</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PROPOSAL ─────────────────────────────────────────────── -->
+<section id="proposal">
+  <div class="proposal-header reveal">
+    <span class="section-label" data-en="Our Proposal" data-ar="عرضنا" data-fr="Notre Proposition">Our Proposal</span>
+    <h2 class="section-headline">
+      <span data-en="The Growth Partner" data-ar="الشريك الاستراتيجي" data-fr="Le Partenaire de Croissance">The Growth Partner</span><br>
+      <em class="italic-gold" data-en="For Industrial Businesses." data-ar="للأعمال الصناعية." data-fr="Pour les Entreprises Industrielles.">For Industrial Businesses.</em>
+    </h2>
+    <p class="body-text" style="max-width:680px;margin-top:16px;" data-en="INDUSTRA is a specialized industrial growth partner dedicated to helping manufacturing and B2B businesses in Egypt and the Middle East scale with precision. We combine deep industry knowledge with modern marketing expertise to deliver measurable results." data-ar="INDUSTRA شريك نمو صناعي متخصص يساعد الشركات التصنيعية وشركات B2B في مصر والشرق الأوسط على التوسع بدقة. نجمع بين المعرفة الصناعية العميقة وخبرة التسويق الحديثة لتحقيق نتائج قابلة للقياس." data-fr="INDUSTRA est un partenaire de croissance industrielle spécialisé dédié à aider les entreprises manufacturières et B2B en Égypte et au Moyen-Orient à se développer avec précision. Nous combinons une connaissance approfondie du secteur avec une expertise marketing moderne pour délivrer des résultats mesurables.">INDUSTRA is a specialized industrial growth partner dedicated to helping manufacturing and B2B businesses in Egypt and the Middle East scale with precision. We combine deep industry knowledge with modern marketing expertise to deliver measurable results.</p>
+  </div>
+
+  <!-- Mission & Vision -->
+  <div class="proposal-mv reveal reveal-d1">
+    <div class="proposal-mv-card">
+      <div class="proposal-mv-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+      </div>
+      <div class="proposal-mv-label" data-en="Mission" data-ar="الرسالة" data-fr="Mission">Mission</div>
+      <p class="proposal-mv-text" data-en="To empower industrial businesses through specialized marketing, lead generation, and growth solutions — delivering measurable results and long-term value for every client we serve." data-ar="تمكين الشركات الصناعية من خلال التسويق المتخصص وتوليد العملاء وحلول النمو — وتحقيق نتائج قابلة للقياس وقيمة طويلة الأمد لكل عميل نخدمه." data-fr="Autonomiser les entreprises industrielles grâce au marketing spécialisé, à la génération de leads et aux solutions de croissance — en délivrant des résultats mesurables et une valeur à long terme pour chaque client.">To empower industrial businesses through specialized marketing, lead generation, and growth solutions — delivering measurable results and long-term value for every client we serve.</p>
+    </div>
+    <div class="proposal-mv-card">
+      <div class="proposal-mv-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+      </div>
+      <div class="proposal-mv-label" data-en="Vision" data-ar="الرؤية" data-fr="Vision">Vision</div>
+      <p class="proposal-mv-text" data-en="To become the leading industrial growth partner in the Middle East — recognized for our expertise, trusted by manufacturers, and driven by a commitment to transforming how industrial businesses grow and compete." data-ar="أن نصبح الشريك الرائد في النمو الصناعي في الشرق الأوسط — معروفون بخبرتنا، موثوقون من المصنّعين، ومدفوعون بالتزام بتحويل طريقة نمو الشركات الصناعية وتنافسها." data-fr="Devenir le partenaire de croissance industrielle de référence au Moyen-Orient — reconnu pour notre expertise, approuvé par les fabricants, et animé par un engagement à transformer la façon dont les entreprises industrielles croissent et se développent.">To become the leading industrial growth partner in the Middle East — recognized for our expertise, trusted by manufacturers, and driven by a commitment to transforming how industrial businesses grow and compete.</p>
+    </div>
+    <div class="proposal-mv-card">
+      <div class="proposal-mv-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      </div>
+      <div class="proposal-mv-label" data-en="Core Values" data-ar="قيمنا الأساسية" data-fr="Valeurs Fondamentales">Core Values</div>
+      <p class="proposal-mv-text" data-en="Industry Focus · Results Driven · Partnership Mindset · Innovation · Transparency · Continuous Improvement" data-ar="التركيز الصناعي · النتائج أولاً · عقلية الشراكة · الابتكار · الشفافية · التحسين المستمر" data-fr="Focus Sectoriel · Axé Résultats · Esprit de Partenariat · Innovation · Transparence · Amélioration Continue">Industry Focus · Results Driven · Partnership Mindset · Innovation · Transparency · Continuous Improvement</p>
+    </div>
+  </div>
+
+  <!-- Why INDUSTRA cards -->
+  <div class="proposal-why reveal reveal-d2">
+    <div class="proposal-why-card">
+      <div class="proposal-why-title" data-en="Industrial-Focused Expertise" data-ar="خبرة متخصصة في الصناعة" data-fr="Expertise Sectorielle Industrielle">Industrial-Focused Expertise</div>
+      <p class="proposal-why-text" data-en="We specialize exclusively in industrial and B2B sectors — giving us unmatched insight into your market, your buyers, and the channels that drive real results." data-ar="نتخصص حصرياً في القطاعات الصناعية وB2B — مما يمنحنا فهماً لا مثيل له لسوقك ومشتريك والقنوات التي تحقق نتائج حقيقية." data-fr="Nous nous spécialisons exclusivement dans les secteurs industriels et B2B — ce qui nous donne une connaissance incomparable de votre marché, de vos acheteurs et des canaux qui génèrent de vrais résultats.">We specialize exclusively in industrial and B2B sectors — giving us unmatched insight into your market, your buyers, and the channels that drive real results.</p>
+    </div>
+    <div class="proposal-why-card">
+      <div class="proposal-why-title" data-en="Data-Driven Decisions" data-ar="قرارات مبنية على البيانات" data-fr="Décisions Basées sur les Données">Data-Driven Decisions</div>
+      <p class="proposal-why-text" data-en="Every strategy we develop is backed by analytics, market intelligence, and performance metrics — ensuring your budget delivers measurable, trackable ROI." data-ar="كل استراتيجية نطورها مدعومة بالتحليلات وذكاء السوق ومقاييس الأداء — لضمان أن ميزانيتك تحقق عائداً قابلاً للقياس والتتبع." data-fr="Chaque stratégie que nous développons est soutenue par des analyses, de l'intelligence de marché et des métriques de performance — garantissant que votre budget délivre un ROI mesurable et traçable.">Every strategy we develop is backed by analytics, market intelligence, and performance metrics — ensuring your budget delivers measurable, trackable ROI.</p>
+    </div>
+    <div class="proposal-why-card">
+      <div class="proposal-why-title" data-en="Long-Term Partnerships" data-ar="شراكات طويلة الأمد" data-fr="Partenariats à Long Terme">Long-Term Partnerships</div>
+      <p class="proposal-why-text" data-en="We build lasting relationships with our clients, acting as a true growth partner invested in your long-term success — not just a one-time vendor." data-ar="نبني علاقات دائمة مع عملائنا، نعمل كشريك نمو حقيقي مستثمر في نجاحك على المدى البعيد — وليس مجرد مورد لمرة واحدة." data-fr="Nous construisons des relations durables avec nos clients, agissant comme un véritable partenaire de croissance investi dans votre succès à long terme — pas seulement un fournisseur ponctuel.">We build lasting relationships with our clients, acting as a true growth partner invested in your long-term success — not just a one-time vendor.</p>
+    </div>
+    <div class="proposal-why-card">
+      <div class="proposal-why-title" data-en="AI-Powered Growth" data-ar="نمو مدعوم بالذكاء الاصطناعي" data-fr="Croissance par l'IA">AI-Powered Growth</div>
+      <p class="proposal-why-text" data-en="We leverage cutting-edge AI tools for lead generation, content creation, and market analysis — giving industrial clients a modern competitive edge." data-ar="نستخدم أحدث أدوات الذكاء الاصطناعي لتوليد العملاء وإنشاء المحتوى وتحليل السوق — مما يمنح عملاءنا الصناعيين ميزة تنافسية حديثة." data-fr="Nous exploitons des outils IA de pointe pour la génération de leads, la création de contenu et l'analyse de marché — donnant aux clients industriels un avantage concurrentiel moderne.">We leverage cutting-edge AI tools for lead generation, content creation, and market analysis — giving industrial clients a modern competitive edge.</p>
+    </div>
+  </div>
+
+  <!-- Growth Framework -->
+  <div class="proposal-framework reveal reveal-d2">
+    <div class="proposal-framework-header">
+      <span class="section-label" data-en="Growth Framework" data-ar="إطار النمو" data-fr="Cadre de Croissance">Growth Framework</span>
+      <h3 class="proposal-framework-title" data-en="Our Proven 5-Stage Methodology" data-ar="منهجيتنا المجربة من 5 مراحل" data-fr="Notre Méthodologie Éprouvée en 5 Étapes">Our Proven 5-Stage Methodology</h3>
+    </div>
+    <div class="proposal-stages">
+      <div class="proposal-stage">
+        <div class="proposal-stage-num">01</div>
+        <div class="proposal-stage-title" data-en="Discovery" data-ar="الاكتشاف" data-fr="Découverte">Discovery</div>
+        <div class="proposal-stage-text" data-en="Deeply understand your business, market, and competition." data-ar="فهم عميق لعملك وسوقك ومنافسيك." data-fr="Comprendre en profondeur votre entreprise, marché et concurrence.">Deeply understand your business, market, and competition.</div>
+      </div>
+      <div class="proposal-stage-arrow">→</div>
+      <div class="proposal-stage">
+        <div class="proposal-stage-num">02</div>
+        <div class="proposal-stage-title" data-en="Strategy" data-ar="الاستراتيجية" data-fr="Stratégie">Strategy</div>
+        <div class="proposal-stage-text" data-en="Craft a tailored industrial growth strategy aligned with your goals." data-ar="صياغة استراتيجية نمو صناعية مخصصة تتوافق مع أهدافك." data-fr="Élaborer une stratégie de croissance industrielle sur mesure alignée sur vos objectifs.">Craft a tailored industrial growth strategy aligned with your goals.</div>
+      </div>
+      <div class="proposal-stage-arrow">→</div>
+      <div class="proposal-stage">
+        <div class="proposal-stage-num">03</div>
+        <div class="proposal-stage-title" data-en="Execution" data-ar="التنفيذ" data-fr="Exécution">Execution</div>
+        <div class="proposal-stage-text" data-en="Implement campaigns with precision across all chosen channels." data-ar="تنفيذ الحملات بدقة عبر جميع القنوات المختارة." data-fr="Mettre en œuvre les campagnes avec précision sur tous les canaux choisis.">Implement campaigns with precision across all chosen channels.</div>
+      </div>
+      <div class="proposal-stage-arrow">→</div>
+      <div class="proposal-stage">
+        <div class="proposal-stage-num">04</div>
+        <div class="proposal-stage-title" data-en="Optimization" data-ar="التحسين" data-fr="Optimisation">Optimization</div>
+        <div class="proposal-stage-text" data-en="Continuously optimize based on real-time data and performance." data-ar="التحسين المستمر بناءً على البيانات الحية والأداء." data-fr="Optimiser en continu sur la base des données en temps réel et des performances.">Continuously optimize based on real-time data and performance.</div>
+      </div>
+      <div class="proposal-stage-arrow">→</div>
+      <div class="proposal-stage">
+        <div class="proposal-stage-num">05</div>
+        <div class="proposal-stage-title" data-en="Growth" data-ar="النمو" data-fr="Croissance">Growth</div>
+        <div class="proposal-stage-text" data-en="Scale what works — delivering compounding, long-term industrial growth." data-ar="توسيع ما ينجح — تحقيق نمو صناعي متراكم وطويل الأمد." data-fr="Scaler ce qui fonctionne — délivrer une croissance industrielle composée et durable.">Scale what works — delivering compounding, long-term industrial growth.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Download CTA -->
+  <div class="proposal-download reveal reveal-d3">
+    <div class="proposal-download-left">
+      <h3 class="proposal-download-title" data-en="Ready to See the Full Picture?" data-ar="مستعد لرؤية الصورة الكاملة؟" data-fr="Prêt à Voir la Totalité?">Ready to See the Full Picture?</h3>
+      <p class="proposal-download-sub" data-en="Download our complete proposal — full pricing breakdown, service details, package comparison, and growth framework." data-ar="حمّل عرضنا الكامل — التفاصيل الكاملة للأسعار والخدمات ومقارنة الباقات وإطار النمو." data-fr="Téléchargez notre proposition complète — détail complet des tarifs, des services, comparaison des forfaits et cadre de croissance.">Download our complete proposal — full pricing breakdown, service details, package comparison, and growth framework.</p>
+    </div>
+    <a href="assets/Industra_proposal.pdf" download="INDUSTRA_Proposal.pdf" class="proposal-download-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      <span data-en="Download Full Proposal" data-ar="تحميل العرض الكامل" data-fr="Télécharger la Proposition Complète">Download Full Proposal</span>
+    </a>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─────────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand">
+      <div class="footer-logo-row">
+        <img src="assets/images/logo-white.png" class="footer-logo-img" alt="INDUSTRA">
+      </div>
+      <p class="footer-tagline" data-en="Industrial Growth Partner" data-ar="شريك النمو الصناعي" data-fr="Partenaire de Croissance Industrielle">Industrial Growth Partner</p>
+      <p class="footer-desc" data-en="Marketing built exclusively for manufacturers and B2B industrial companies across Egypt and the Middle East. Not a generic agency — a dedicated growth partner." data-ar="تسويق مصمم حصراً للمصنّعين وشركات B2B الصناعية في مصر والشرق الأوسط. لسنا وكالة عادية — بل شريكك المتخصص في النمو." data-fr="Marketing conçu exclusivement pour les fabricants et les entreprises industrielles B2B en Égypte et au Moyen-Orient. Pas une agence généraliste — un partenaire de croissance dédié.">Marketing built exclusively for manufacturers and B2B industrial companies across Egypt and the Middle East. Not a generic agency — a dedicated growth partner.</p>
+    </div>
+
+    <div>
+      <p class="footer-col-title" data-en="Get In Touch" data-ar="تواصل معنا" data-fr="Contactez-Nous">Get In Touch</p>
+      <a href="mailto:Industra@gmail.com" class="footer-contact-item">
+        <div class="footer-contact-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+        </div>
+        <span class="footer-contact-text">Industra@gmail.com</span>
+      </a>
+    </div>
+
+    <div>
+      <p class="footer-col-title" data-en="Follow Us" data-ar="تابعنا" data-fr="Suivez-Nous">Follow Us</p>
+      <div class="footer-social-grid">
+        <a href="https://instagram.com/IndustraAgency" target="_blank" rel="noopener" class="footer-social-link">
+          <div class="footer-social-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </div>
+          <div>
+            <span class="footer-social-name">Instagram</span>
+            <span class="footer-social-handle">@IndustraAgency</span>
+          </div>
+        </a>
+        <a href="https://linkedin.com/company/IndustraAgency" target="_blank" rel="noopener" class="footer-social-link">
+          <div class="footer-social-icon">
+            <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <div>
+            <span class="footer-social-name">LinkedIn</span>
+            <span class="footer-social-handle">@IndustraAgency</span>
+          </div>
+        </a>
+        <a href="https://facebook.com/IndustraAgency" target="_blank" rel="noopener" class="footer-social-link">
+          <div class="footer-social-icon">
+            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </div>
+          <div>
+            <span class="footer-social-name">Facebook</span>
+            <span class="footer-social-handle">@IndustraAgency</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span class="footer-copy" data-en="&copy; 2025 INDUSTRA. All rights reserved." data-ar="&copy; 2025 INDUSTRA. جميع الحقوق محفوظة." data-fr="&copy; 2025 INDUSTRA. Tous droits réservés.">&copy; 2025 INDUSTRA. All rights reserved.</span>
+    <span class="footer-bottom-tag" data-en="Egypt &amp; Middle East" data-ar="مصر والشرق الأوسط" data-fr="Égypte &amp; Moyen-Orient">Egypt &amp; Middle East</span>
+  </div>
+</footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
