@@ -650,6 +650,12 @@
         Services
       </div>
 
+      <div class="sidebar-section">Sales</div>
+      <div class="sidebar-link" data-tab="clients">
+        <svg class="sidebar-icon" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        Client Sign-Ups
+      </div>
+
       <div class="sidebar-section">Site Settings</div>
       <div class="sidebar-link" data-tab="navigation">
         <svg class="sidebar-icon" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -1086,6 +1092,101 @@
         </div>
       </div>
 
+      <!-- ── CLIENT SIGN-UPS ─────────────────────────────── -->
+      <div class="admin-tab" id="tab-clients">
+        <div class="page-header">
+          <h1 class="page-title">Client Sign-Ups</h1>
+          <p class="page-sub">Log a new client once they agree to subscribe. Entries are saved directly to the team's Google Sheet.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Sheet Connection</div>
+          <div class="field-group">
+            <label class="field-label">Google Sheet Web App URL</label>
+            <input type="text" class="field-input" id="sheet-url" placeholder="https://script.google.com/macros/s/XXXXXXXX/exec">
+          </div>
+          <div class="save-bar">
+            <button class="btn-save" onclick="saveSheetUrl()">Save Connection</button>
+            <span class="save-status" id="status-sheeturl">✓ Connection saved</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Add New Client</div>
+          <div class="field-row">
+            <div class="field-group">
+              <label class="field-label">Place Name</label>
+              <input type="text" class="field-input" id="client-place">
+            </div>
+            <div class="field-group">
+              <label class="field-label">Phone Number</label>
+              <input type="tel" class="field-input" id="client-phone">
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field-group">
+              <label class="field-label">Manager Name</label>
+              <input type="text" class="field-input" id="client-manager">
+            </div>
+            <div class="field-group">
+              <label class="field-label">Package</label>
+              <select class="field-select" id="client-package">
+                <option value="Starter">Starter</option>
+                <option value="Growth">Growth</option>
+                <option value="Enterprise">Enterprise</option>
+              </select>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field-group">
+              <label class="field-label">Address</label>
+              <input type="text" class="field-input" id="client-address">
+            </div>
+            <div class="field-group">
+              <label class="field-label">Location</label>
+              <select class="field-select" id="client-location">
+                <option value="Cairo">Cairo</option>
+                <option value="Giza">Giza</option>
+                <option value="Alexandria">Alexandria</option>
+                <option value="Qalyubia">Qalyubia</option>
+                <option value="Port Said">Port Said</option>
+                <option value="Suez">Suez</option>
+                <option value="Dakahlia">Dakahlia</option>
+                <option value="Sharqia">Sharqia</option>
+                <option value="Gharbia">Gharbia</option>
+                <option value="Monufia">Monufia</option>
+                <option value="Beheira">Beheira</option>
+                <option value="Kafr El Sheikh">Kafr El Sheikh</option>
+                <option value="Damietta">Damietta</option>
+                <option value="Ismailia">Ismailia</option>
+                <option value="Faiyum">Faiyum</option>
+                <option value="Beni Suef">Beni Suef</option>
+                <option value="Minya">Minya</option>
+                <option value="Assiut">Assiut</option>
+                <option value="Sohag">Sohag</option>
+                <option value="Qena">Qena</option>
+                <option value="Luxor">Luxor</option>
+                <option value="Aswan">Aswan</option>
+                <option value="Red Sea">Red Sea</option>
+                <option value="New Valley">New Valley</option>
+                <option value="Matrouh">Matrouh</option>
+                <option value="North Sinai">North Sinai</option>
+                <option value="South Sinai">South Sinai</option>
+              </select>
+            </div>
+          </div>
+          <div class="save-bar">
+            <button class="btn-save" id="client-submit-btn" onclick="submitClient()">Add Client &amp; Save to Sheet</button>
+            <span class="save-status" id="status-clients">✓ Client added</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Recently Added (This Session)</div>
+          <div id="recent-clients-list" style="font-size:0.85rem;color:var(--steel);">No clients added yet this session.</div>
+        </div>
+      </div>
+
       <!-- ── NAVIGATION ──────────────────────────────────── -->
       <div class="admin-tab" id="tab-navigation">
         <div class="page-header">
@@ -1372,6 +1473,86 @@ function switchPkg(id, btn) {
   btn.classList.add('active');
   document.querySelectorAll('.pkg-panel').forEach(p => p.classList.remove('active'));
   document.getElementById('pkg-' + id)?.classList.add('active');
+}
+
+/* ── CLIENT SIGN-UPS ────────────────────────────────────────── */
+const sheetUrlInput = document.getElementById('sheet-url');
+sheetUrlInput.value = localStorage.getItem('industra-sheet-url') || '';
+
+function saveSheetUrl() {
+  localStorage.setItem('industra-sheet-url', sheetUrlInput.value.trim());
+  flash('sheeturl');
+}
+
+async function submitClient() {
+  const sheetUrl = localStorage.getItem('industra-sheet-url') || '';
+  const statusEl = document.getElementById('status-clients');
+  const btn = document.getElementById('client-submit-btn');
+
+  const placeName    = document.getElementById('client-place').value.trim();
+  const phoneNumber  = document.getElementById('client-phone').value.trim();
+  const managerName  = document.getElementById('client-manager').value.trim();
+  const pkg          = document.getElementById('client-package').value;
+  const address      = document.getElementById('client-address').value.trim();
+  const location     = document.getElementById('client-location').value;
+
+  if (!sheetUrl) {
+    statusEl.style.color = 'var(--red)';
+    statusEl.textContent = '✕ Set the Sheet Connection URL above first';
+    statusEl.classList.add('visible');
+    setTimeout(() => statusEl.classList.remove('visible'), 3500);
+    return;
+  }
+
+  if (!placeName || !phoneNumber) {
+    statusEl.style.color = 'var(--red)';
+    statusEl.textContent = '✕ Place Name and Phone Number are required';
+    statusEl.classList.add('visible');
+    setTimeout(() => statusEl.classList.remove('visible'), 3500);
+    return;
+  }
+
+  const formData = new FormData();
+  formData.append('placeName', placeName);
+  formData.append('phoneNumber', phoneNumber);
+  formData.append('managerName', managerName);
+  formData.append('package', pkg);
+  formData.append('address', address);
+  formData.append('location', location);
+
+  btn.disabled = true;
+  btn.textContent = 'Saving…';
+
+  try {
+    await fetch(sheetUrl, { method: 'POST', body: formData });
+
+    statusEl.style.color = 'var(--green)';
+    statusEl.textContent = '✓ Client added to sheet';
+    statusEl.classList.add('visible');
+    setTimeout(() => statusEl.classList.remove('visible'), 3500);
+
+    const list = document.getElementById('recent-clients-list');
+    if (list.dataset.empty !== 'false') { list.innerHTML = ''; list.dataset.empty = 'false'; }
+    const time = new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+    const row = document.createElement('div');
+    row.style.cssText = 'padding:10px 0;border-bottom:1px solid var(--border);';
+    row.innerHTML = `<span style="color:var(--gold)">${time}</span> — <span style="color:var(--white)">${placeName}</span> (${managerName || 'no manager listed'}) · ${pkg} · ${location}`;
+    list.prepend(row);
+
+    document.getElementById('client-place').value = '';
+    document.getElementById('client-phone').value = '';
+    document.getElementById('client-manager').value = '';
+    document.getElementById('client-address').value = '';
+    document.getElementById('client-place').focus();
+  } catch (err) {
+    statusEl.style.color = 'var(--red)';
+    statusEl.textContent = '✕ Could not reach the sheet — check the connection URL';
+    statusEl.classList.add('visible');
+    setTimeout(() => statusEl.classList.remove('visible'), 3500);
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Add Client & Save to Sheet';
+  }
 }
 
 /* ── FEATURE EDITING ────────────────────────────────────────── */
